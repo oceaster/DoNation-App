@@ -9,7 +9,6 @@
     height: 15vmin;
     max-height: 100px;
     padding: 0 0 5vmin 0;
-    margin: 0 0 calc(5vmin) 0;
 }
 
 #app-header h1 {
@@ -24,4 +23,32 @@
     padding: 0 0 0 0;
     font-size: calc(5px + 2.5vmin);
     margin: 5vmin 5vmin 5vmin 5vmin;
+}
+
+#app-navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 640px;
+    margin: 8px auto 8px auto;
+}
+
+#app-navbar button {
+    color: darkgrey;
+    height: 32px;
+    width: 50%;
+    font-size: 16px;
+    margin: 0 12px 0 12px;
+    background-color: white;
+    border: unset;
+    border-bottom: 1px solid lightgrey;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#app-navbar button:active {
+    border: unset;
+    border-bottom: 1px solid black;
 }

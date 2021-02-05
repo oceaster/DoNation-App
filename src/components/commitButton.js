@@ -1,9 +1,13 @@
 import './commitButton.css'
+import { navbarSelectViewProfile } from '../apps/header/header.js'
 
-const commitPledge = (onClickFunc) => {
+const commitPledge = (confirmInput) => {
     return <button
         id='commit-button'
-        onClick={onClickFunc}
+        onClick={() => {
+            if (confirmInput())
+                navbarSelectViewProfile()
+        }}
     > Commit Pledge </button>
 }
 

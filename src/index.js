@@ -1,17 +1,18 @@
+// REACT IMPORTS
 import React from 'react'
 import ReactDOM from 'react-dom'
+
+// LOCAL APP IMPORTS
 import './index.css'
+import Home from './apps/home/home.js'
 import Header from './apps/header/header.js'
 import Footer from './apps/footer/footer.js'
-import PledgeSelect from './apps/pledgeSelect/pledgeSelect.js'
-import PledgeResult from './apps/pledgeResult/pledgeResult.js'
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
     <div id='app'>
-      <PledgeSelect />
-      <PledgeResult />
+      <Home />
     </div>
     <Footer />
   </React.StrictMode>,

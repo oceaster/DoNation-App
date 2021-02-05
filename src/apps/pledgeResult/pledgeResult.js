@@ -12,7 +12,7 @@ const pledgeResult = () => {
     return <div id='pledge-results'>
         <h2> Saves </h2>
         <div id='pledge-saves'>
-            {co2Result('--')}
+            {co2Result('--kg')}
         </div>
         <h2> Impacts </h2>
         <div id='pledge-impacts'>
