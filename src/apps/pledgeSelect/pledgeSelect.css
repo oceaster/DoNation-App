@@ -1,0 +1,23 @@
+#pledge-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 96%;
+    max-width: 640px;
+    padding: 0 calc(140px + 2%) 0 calc(140px + 2%);
+    margin: 0 auto 64px auto;
+    text-align: center;
+}
+
+#pledge-section h2 {
+    text-align: center;
+}
+
+#pledge-section input, select {
+    width: 164px;
+    height: 1.5rem;
+    background-color: whitesmoke;
+    margin: .5rem .5rem .5rem .5rem;
+    border: .1rem solid lightgrey;
+}

@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Pledge from './apps/pledge/pledge.js';
-import reportWebVitals from './reportWebVitals';
+// REACT IMPORTS
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+// LOCAL APP IMPORTS
+import './index.css'
+import Home from './apps/home/home.js'
+import Header from './apps/header/header.js'
+import Footer from './apps/footer/footer.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Pledge />
+    <Header />
+    <div id='app'>
+      <Home />
+    </div>
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

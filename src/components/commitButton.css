@@ -1,0 +1,15 @@
+#commit-button {
+    border-radius: 50px;
+    width: 150px;
+    font-size: 18px;
+    height: 50px;
+    color: whitesmoke;
+    margin: 0 auto 0 auto;
+    border: none;
+    background-color: #52BE80;
+}
+
+#commit-button:focus {
+    outline: none;
+    background-color: #27AE60;
+}
