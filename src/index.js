@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './apps/App';
+import Pledge from './apps/pledge/pledge.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Pledge />
   </React.StrictMode>,
   document.getElementById('root')
 );
