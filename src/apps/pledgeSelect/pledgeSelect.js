@@ -31,7 +31,7 @@ const selectPledgeType = () => {
     >
         <option value='none' disabled> --- select --- </option>
         {pledgeType('energy')}
-        {pledgeType('diet')}
+        {/* pledgeType('diet') */}
     </select>
 }
 

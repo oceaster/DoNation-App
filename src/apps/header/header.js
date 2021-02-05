@@ -4,6 +4,7 @@ import { render } from 'react-dom'
 // LOCAL APP IMPORTS
 import './header.css'
 import Home from '../home/home.js'
+import Profile from '../profile/profile.js'
 import PledgeSelect from '../pledgeSelect/pledgeSelect.js'
 import PledgeResult from '../pledgeResult/pledgeResult.js'
 
@@ -46,8 +47,7 @@ const navbarSelectMakePledge = () => {
 const navbarSelectViewProfile = () => {
     navbarSelect('navbar_view_profile')
     render(
-        <>
-        </>,
+        <Profile />,
         document.getElementById('app')
     )
 }
