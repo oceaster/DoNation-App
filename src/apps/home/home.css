@@ -1,0 +1,12 @@
+
+.saved-total-section {
+    display: flex;
+}
+
+.saved-total-section h4 {
+    margin: 16px 16px 16px 16px;
+}
+
+.saved-total {
+    margin-left: 32px;
+}
