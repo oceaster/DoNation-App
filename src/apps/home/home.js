@@ -1,6 +1,8 @@
 import './home.css'
 import serverAdr from '../../library/server.js'
 import co2img from '../../assets/icons/co2.svg'
+import wtrimg from '../../assets/icons/water.svg'
+import wstimg from '../../assets/icons/waste.svg'
 
 const total_co2_saved = () => {
     fetch(`${serverAdr}api/total/co2`)
@@ -19,11 +21,11 @@ const Home = () => {
         </div>
         <h2 id='co2-saved-total' className='saved-total'> -- </h2>
         <div className='saved-total-section'>
-            <img alt='co2' src={co2img} /><h4> Total Water Saved </h4>
+            <img alt='water' src={wtrimg} /><h4> Total Water Saved </h4>
         </div>
         <h2 className='saved-total'> -- </h2>
         <div className='saved-total-section'>
-            <img alt='co2' src={co2img} /><h4> Total Waste Saved </h4>
+            <img alt='waste' src={wstimg} /><h4> Total Waste Saved </h4>
         </div>
         <h2 className='saved-total'> -- </h2>
         {total_co2_saved()}
