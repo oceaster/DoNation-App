@@ -1,0 +1,29 @@
+#pledge-results {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: top;
+    width: 96%;
+    max-width: 420px;
+    padding: 5vmin 2% 5vmin 2%;
+    margin: 0 auto 0 auto;
+    border-left: 1px solid black;
+}
+
+#pledge-results h2, h3 {
+    font-size: small;
+    margin: .5rem 0 .5rem 0;
+}
+
+#pledge-saves {
+    margin-left: 32px;
+    margin-bottom: 24px;
+}
+
+#pledge-saves h2, h3 {
+    font-size: x-large;
+}
+
+#pledge-impacts {
+    margin-left: 32px;
+}
