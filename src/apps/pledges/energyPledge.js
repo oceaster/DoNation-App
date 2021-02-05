@@ -1,5 +1,21 @@
 import './pledges.css'
+import serverAdr from '../../library/server.js'
 import commitPledge from '../../components/commitButton.js'
+
+const postInput = () => {
+    const supplyEl = document.getElementById('my-energy-supplier')
+    const supply = supplyEl.options[supplyEl.selectedIndex].text
+    const people = document.getElementById('people-in-house').value
+    const sourceEl = document.getElementById('my-heating-type')
+    const source = sourceEl.options[sourceEl.selectedIndex].text
+    const text = encodeURIComponent(
+`Within the next two months,
+I pledge to switch from my current energy supplier – which is ${supply} – to a green energy supplier.
+${people} people live in our home.
+My house is mainly heated by ${source}.`
+    )
+    fetch(`${serverAdr}api/post/0/${text}/${calculateCO2()}`)
+}
 
 const confirmInput = () => {
     const supply = document.getElementById('my-energy-supplier').value
@@ -79,7 +95,7 @@ const energySupplier = () => {
 
 const energyPledge = () => {
     return <div id='pledge_energy'>
-        <p>
+        <p id='pledge_energy_text'>
             Within the next two
             months, I pledge to
             switch from my
@@ -99,7 +115,7 @@ const energyPledge = () => {
             mainly heated by
             {heatingSource()}.
         </p>
-        {commitPledge(confirmInput)}
+        {commitPledge(confirmInput, postInput)}
     </div>
 }
 

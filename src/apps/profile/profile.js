@@ -4,10 +4,10 @@ import serverAdr from '../../library/server.js'
 const makePledge = (id, content, co2, timestamp) => {
     return `<div
         id=${id}
-        class='pledge_entry'
+        class='pledge-entry'
     >
         <p> ${content} </p>
-        <h4> Saved ${co2}kg of CO2 </h4>
+        <h4> Saving ${co2}kg of CO2 </h4>
         <h6> ${timestamp} </h6>
     </div>`
 }
