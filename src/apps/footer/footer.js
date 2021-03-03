@@ -4,8 +4,8 @@ const Footer = () => {
     return <footer>
         <p>
             by &nbsp;
-            <a href='https://github.com/oceaster'>
-                Owen Cameron Easter
+            <a href='https://github.com/EasterCompany'>
+                Easter Company
             </a>
             &nbsp; for &nbsp;
             <a href='https://www.wearedonation.com/'>
